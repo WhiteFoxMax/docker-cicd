@@ -34,7 +34,7 @@ job('NodeJS Docker example Max') {
         dockerBuildAndPublish {
             repositoryName('whitefoxmax/test_repo')
             tag('${GIT_REVISION,length=9}')
-            registryCredentials('whitefoxmax')
+            registryCredentials('7c6035b5-e963-4816-8c74-0d99cceeac04')
             forcePull(false)
             forceTag(false)
             buildContext('./basics')
